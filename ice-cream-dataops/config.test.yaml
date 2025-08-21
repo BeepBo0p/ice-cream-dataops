@@ -3,7 +3,9 @@ environment:
   project: cdf-bootcamp-67-test
   validation-type: test
   selected:
-  - modules/
+  - modules/bootcamp/data_foundation
+  - modules/bootcamp/ice_cream_api
+  - modules/bootcamp/use_cases/oee
 
 variables:
   modules:
@@ -11,8 +13,10 @@ variables:
       # Variables shared by modules
       icapi_ds_external_id: ds_icapi
       icapi_space_name: icapi_dm_space
+      data_foundation:
+        data_developer_source_id: 6a0463af-a882-4971-aa89-c1f3732370d8 # Group object ID of the data developer group
       ice_cream_api:
-        icapi_extractors_source_id: 00df9d7f-7d5b-45a9-85b1-bfce78942b66
+        icapi_extractors_source_id: 7d71efba-0314-4aed-876a-c087a7590b32 # Group object ID of the extractor entra group
         tokenUri: ${IDP_TOKEN_URL}
         cdfProjectName: ${CDF_PROJECT}
         scopes: ${IDP_SCOPES}
@@ -20,6 +24,8 @@ variables:
         icapi_trigger_client_secret: ${ICAPI_EXTRACTORS_CLIENT_SECRET}
         icapi_extractors_client_id: ${ICAPI_EXTRACTORS_CLIENT_ID}
         icapi_extractors_client_secret: ${ICAPI_EXTRACTORS_CLIENT_SECRET}
+      data_set_external_id: ds_ice_cream_factory
+      oee_data_set_external_id: ds_oee
 
       use_cases:
         oee:
