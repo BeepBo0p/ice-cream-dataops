@@ -209,3 +209,4 @@ __marimo__/
 # Misc
 uv.lock
 env_secrets/
+**/function_local_venvs/
