@@ -29,7 +29,7 @@ variables:
 
       use_cases:
         oee:
-          data_pipeline_oee_source_id: 863acabe-4d79-4942-9fb3-77b4fb311073T
+          data_pipeline_oee_source_id: d9e17d53-03c8-4bd5-8e48-b5921d4e0631 # Worked when using service principal ID directly, testing with group object ID
           uc_oee_ds_external_id: ds_uc_oee
           oee_space_name: oee_ts_space
           data_pipeline_oee_client_id: ${DATA_PIPELINE_OEE_CLIENT_ID}
