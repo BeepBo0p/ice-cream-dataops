@@ -210,3 +210,4 @@ __marimo__/
 uv.lock
 env_secrets/
 **/function_local_venvs/
+.env test
